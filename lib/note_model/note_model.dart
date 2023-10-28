@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
 part 'note_model.g.dart';
@@ -5,17 +6,22 @@ part 'note_model.g.dart';
 @HiveType(typeId: 0)
 class NoteModel extends HiveObject {
   @HiveField(0)
-  final String title;
+  String title;
   @HiveField(1)
-  final String content;
+  String content;
   @HiveField(2)
-  final String date;
+  final String createdDate;
   @HiveField(3)
-  final int color;
+  int color;
+  @HiveField(4)
+  String editDate;
+  // @HiveField(5)
+  // Image? img;
 
   NoteModel(
       {required this.title,
       required this.content,
-      required this.date,
+      required this.editDate,
+      required this.createdDate,
       required this.color});
 }

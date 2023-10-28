@@ -33,7 +33,13 @@ dependencies:
   font_awesome_flutter: ^10.6.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  modal_progress_hud_nsn: ^0.4.0
+  intl: ^0.18.1
+  dio: ^5.3.3
+  shared_preferences: ^2.2.2
+  conditional_builder_null_safety: ^0.0.6
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -43,6 +49,12 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.4.6
   hive_generator: ^2.0.1
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/launcher_icon.png"  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
