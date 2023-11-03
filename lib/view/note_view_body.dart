@@ -41,7 +41,7 @@ class _NoteViewBodyState extends State<NoteViewBody> {
                 },
                 color: color!,
                 customIcon: Icons.search,
-                text: 'Note',
+                text: 'Note Your Diary Today',
                 onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>SearchView()));
                 },
               ),
