@@ -7,7 +7,9 @@ import '../cubit/note_cubit/note_cubit.dart';
 import 'note_item.dart';
 
 class NoteItemListView extends StatelessWidget {
-  const NoteItemListView({super.key, });
+  const NoteItemListView({
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<NoteCubit, NoteStates>(
@@ -16,6 +18,7 @@ class NoteItemListView extends StatelessWidget {
             BlocProvider.of<NoteCubit>(context).noteModelList!;
 
         return ListView.separated(
+          reverse: true,
           physics: const BouncingScrollPhysics(),
           padding: EdgeInsets.zero,
           itemBuilder: (context, index) {
